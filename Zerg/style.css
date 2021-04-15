@@ -1,5 +1,11 @@
 
-
+body {
+    background-color: #10002B;
+    margin: 0;
+    background-image: url("./img/banner.jpg");
+    background-attachment: fixed;
+    background-position: center; 
+}
 
 
 nav {
@@ -20,16 +26,10 @@ nav {
 
 nav > a {
     color: #7B2CBF;
+    font-size: 25px;
 }
 
 
-body {
-    background-color: #10002B;
-    margin: 0;
-    background-image: url("./img/banner.jpg");
-    background-attachment: fixed;
-    background-position: center; 
-}
 
 .transparent {
     height:84vh;
@@ -144,10 +144,14 @@ section {
 
 .merch-box > img {
     grid-area: image;
-    object-fit: cover;
+    /* object-fit: cover;
     width: 100%;
-    max-height: 100%;
+    max-height: 100%; */
 
+    border-radius: 10%;
+    height: 300px; 
+    width: 100%;
+    object-fit: cover;
 }
 
 .merch-text {
