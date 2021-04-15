@@ -45,6 +45,9 @@ body {
     text-align: center;
     font-size: 40px;
 }
+.breakLine > * {
+    padding: 10px;
+}
 
 @media only screen and (max-width: 600px) {
     .merch-box {
