@@ -1,0 +1,69 @@
+body {
+    background-image: url("./img/background.jpg");
+    margin: 0px;
+}
+
+* {
+    color: rgb(214, 205, 199);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 10px;
+}
+h2 {
+    padding: 20px;
+}
+
+#main-panel-backround {
+    background-color: rgba(29, 29, 29, 0.623);
+
+    margin: auto;
+    width: 50%;
+    min-width: 400px;
+    max-width: 850px;
+    padding: 10px;
+
+    height: 100%;
+}
+#main-panel{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+}
+
+#console {
+    height: 600px;
+    overflow: auto;
+
+    text-align: unset ;
+}
+#console-input {
+    width: 100%;
+    display: block;
+    margin : 0 auto;
+
+    color: rgba(19, 19, 19, 0.911);
+}
+#game-box {
+    background: rgba(19, 19, 19, 0.911);
+    padding: 10px
+}
+#break {
+    height: 150px;
+}
+footer {
+    height: auto;
+
+    flex-grow: 1;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    background: rgba(0, 0, 0, 0.432);
+    
+}
