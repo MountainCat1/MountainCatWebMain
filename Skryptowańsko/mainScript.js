@@ -15,5 +15,4 @@ input.addEventListener("keyup", function(event) {
 gameManger.Start();
 
 
-
-
+var input = document.getElementById("console-input");
