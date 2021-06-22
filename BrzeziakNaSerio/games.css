@@ -1,0 +1,60 @@
+.game-card {
+    width: 450px;
+    height: auto;
+    overflow: hidden;
+
+    position: relative;
+    text-align: left;
+
+    filter: drop-shadow(0px 0px 6px darkcyan);
+    border-radius: 7px;
+
+    margin: 60px 10px 0px 10px;
+}
+
+.game-card-description {
+    width: 450px;
+    margin: 20px 10px 0px 10px;
+}
+
+@media only screen and (min-width: 650px) {
+    .game-card {
+        margin: 60px 10px 0px 10px;
+    }
+    .game-card-description {
+        margin: 60px 10px 0px 10px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .game-card {
+        margin: 40px 10px 0px 10px;
+    }
+    .game-card-description {
+        margin: 20px 10px 25 10px;
+    }
+}
+
+.game-card-background {
+    width: 100%;
+    position: relative;
+
+}
+.game-card-gradient {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%,  rgba(0,0,0,0.95) 98%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.6;
+  
+    top: 0;
+}
+.game-card-title {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
+    font-size: 36px;
+    text-decoration: underline;
+    filter: drop-shadow(0px 0px 2px darkcyan);
+}

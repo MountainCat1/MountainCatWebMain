@@ -1,0 +1,12 @@
+.news-block {
+    max-width: 800px;
+    align-self: stretch;
+
+}
+.news-block-footer {
+    color: rgba(192, 192, 192, 0.767);
+}
+
+h2 {
+    filter: drop-shadow(0px 0px 4px darkcyan);
+}

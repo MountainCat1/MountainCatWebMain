@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <ul id="nav-bar">
+        <div id="links">
+            <li><a href="./main.html">Home</a></li>
+            <li><a href="#"  class="active-link">News</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./games.html">Games</a></li>
+        </div>
+        <!-- LOGO -->
+        <div id="logo">
+            <span class="logo-text">
+                Mountain Cat's Games
+            </span>
+            
+            <img src="./img/cog.png" alt="" class="cog-animation">
+        </div>
+        <!-- LOGO -->
+        
+    </ul>
+
+    <ul id="mobile-nav-bar">
+        <!-- LOGO -->
+        <div id="logo">
+            <span class="logo-text">
+                Mountain Cat's Games
+            </span>
+            
+            <img src="./img/cog.png" alt="" class="cog-animation">
+        </div>
+        <!-- LOGO -->
+        <a href="javascript:void(0)" class="icon" onclick="myFunction()">
+            <img src="./img/list.png" alt="" id="mobile-nav-bar-button">
+        </a>
+    </ul>
+    <div id="mobile-links">
+        <a href="./main.html"><li>Home</li></a>
+        <a href="#"><li class="active-link">News</li></a>
+        <a href="./about.html"><li>About</li></a>
+        <a href="./games.html"><li>Games</li></a>
+    </div>
+    <main>
+        <h1>News</h1>
+        <div id="main-flex">
+            <div class="news-block">
+                <h2>Changes in unity which means better performace</h2>
+
+                As team Unity announced before, the new update is coming. From what we know, it will bring many optimalizations to still fresh new 2d technology. This means, that all my games should work somewhat more smoothly. If you ever had a performance issues, I may be something that you were waiting for.
+
+                <div class="home-img-container">
+                    <img src="./img/news/unityIcon.webp" alt="" class="home-img">
+                </div>
+                <span class="news-block-footer">Date: 12.02.2021</span>
+            </div>
+            <div class="news-block">
+                <h2>New game in development - Accident Commander</h2>
+
+                As I announced before, new game is coming. This time you will be a commander of small groups of solders that were sent to the underground facility after some kind of accident. The interesting part is that you will only be able to receive info given you by those under you command, and find way through enemies, race with time and strategic dilemmas. What is event more unique is that you will be able to steer your soldiers with voice commands like true commander sending orders through radio.
+
+                <div class="home-img-container">
+                    <img src="./img/Games/Screen3.png" alt="" class="home-img">
+                </div>
+                <span class="news-block-footer">Date: 03.02.2021</span>
+            </div>
+            <div class="news-block">
+                <h2>Meeting on discord (Q&A)</h2>
+
+                Another meeting on discord is coming. The date is 27.01.2021, and the server is my main discord server that you all know. You will be able to ask questions about newly coming game, future plans, and other stuff associated with developing games by me. <br>
+                Whole event will start at 18:00 UTC and take about 2 hours.
+
+                <div class="home-img-container">
+                    <img src="./img/news/discord.webp" alt="" class="home-img">
+                </div>
+                <span class="news-block-footer">Date: 25.01.2021</span>
+            </div>
+            <div class="news-block">
+                <h2>Update for Buisness!</h2>
+                    The awaited update for Business is out, which means more levels with new buildings and mechanics. From now you will be able to gather stone and metals from the ground using mines and boost your building with roads. Those new features will for sure add some playtime to the game, and make sure that end levels pose some bigger challenge for the players.
+                <div class="home-img-container">
+                    <img src="./img/Games/Screen2.png" alt="" class="home-img">
+                </div>
+                <span class="news-block-footer">Date: 16.12.2020</span>
+            </div>
+        </div>
+    </main>
+
+        <footer>
+            <div>
+                <a href="https://www.facebook.com/">
+                    <img src="./img/icons/facebook.png" alt="" class="footer-img">
+                </a> 
+            </div>
+            
+            <div>
+                <a href="https://mail.google.com/mail/">
+                    <img src="./img/icons/mail.png" alt="" class="footer-img">
+                </a> 
+            </div>
+
+            <div>
+                <a href="https://www.twitter.com/">
+                    <img src="./img/icons/twitter.png" alt="" class="footer-img">
+                </a> 
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+* {
+  color: aliceblue;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+
+  background-color: #111;
+  background-size: auto;
+  background-image: url("./img/indeks.png");
+} 
+#nav-bar {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(43, 43, 43);
+  margin: 0px;
+
+
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 20px;
+
+  z-index: 5;
+}
+#nav-bar > * {
+  margin: 0px 25px;
+}
+#mobile-nav-bar {
+  background-color: rgb(43, 43, 43);
+  font-size: 20px;
+
+  z-index: 6;
+  
+  width: 100%;
+  height: 40px;
+}
+#mobile-nav-bar, #mobile-links {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0px;
+  position: fixed;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 20px;
+}
+#mobile-nav-bar-button {
+  height: 40px;
+  width: auto;
+  margin: 20px 30px;
+  filter: drop-shadow(0px 0px 4px darkcyan)
+}
+#mobile-links > a > li {
+  padding: 1px 10px;
+  text-transform: uppercase;
+}
+#mobile-links > * > *:hover {
+  background-color: rgba(0, 0, 0, 0.205);
+}
+#mobile-links > a {
+  text-decoration: none;
+}
+#mobile-links {
+  z-index: 4;
+  background-color: rgb(37, 37, 37);
+  height: fit-content;
+
+  top: 40px;
+  padding: 15px 0px;
+
+  display: none;
+}
+#links {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 40px;
+}
+#logo {
+  
+  width: 300px;
+
+  display: flex;
+
+  align-items: center;
+  
+}
+.logo-text {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: solid;
+  margin: 0px 7px;
+  filter: drop-shadow(0px 0px 6px darkcyan);
+}
+.cog-animation {
+  height: 30px;
+  filter: invert(100%) drop-shadow(0px 0px 6px darkcyan) ;
+
+
+  -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#links a {
+  text-decoration: none;
+}
+#links a:hover {
+  /* text-shadow: 0px 3px 15px darkcyan; */
+  color: darkcyan;
+  transition: 0.1s;
+}
+.active-link {
+  color: darkcyan;
+  text-shadow: 0px 3px 25px darkcyan;
+}
+main {
+  background-color: rgba(68, 68, 68, 0.61);
+  margin: auto auto 0px auto;
+  width: 960px;
+  min-height: 100vh;
+}
+#main-flex {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.main-flex-item {
+  max-width: 450px;
+  align-self: stretch;
+}
+
+
+@media only screen and (min-width: 650px) {
+  main, #nav-bar, footer {
+    width: 95%;
+    max-width: 960px;
+  }
+  main {
+    padding: 50px 2%;
+  }
+  footer {
+    padding: 20px 2%;
+  }
+  #nav-bar {
+    display: flex;
+    padding: 0 2%;
+  }
+  #mobile-nav-bar, #mobile-links {
+    display: none;
+  }
+} 
+@media only screen and (max-width: 650px) {
+  main, #nav-bar, footer {
+    width: 95%
+  }
+  main {
+    padding: 50px 2.5%;
+  }
+  footer {
+    padding: 20px 2.5%;
+  }
+  #nav-bar {
+    display: none;
+  }
+  #mobile-nav-bar {
+    display: flex;
+  }
+  #mobile-links {
+    display: none;
+  }
+}
+
+.home-img {
+  width: 500px;
+  height: auto;
+  display: block;
+
+  max-width: 90%;
+
+  transition: 0.3s;
+
+  z-index: 3;
+
+  border: black solid px;
+  margin: 15px 0;
+  filter: drop-shadow(0px 0px 6px darkcyan);
+  border-radius: 7px;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  padding-bottom: 40px;
+  filter: drop-shadow(0px 0px 6px darkcyan);
+  text-decoration: underline;
+}
+h2 {
+  filter: drop-shadow(0px 0px 1.5px darkcyan);
+}
+footer {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: rgb(43, 43, 43);
+  margin: 0px;
+
+  display: flex;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 20px;
+
+  z-index: -1;
+
+  height: 35px;
+}
+footer > * {
+  margin: 100px 20px;
+}
+.footer-img {
+  max-width: 50px;
+  filter: invert(100%) opacity(70%) drop-shadow(0px 0px 6px darkcyan);
+}
+.footer-img:hover {
+  max-width: 50px;
+  filter: invert(100%) opacity(100%) drop-shadow(0px 0px 12px darkcyan);
+}

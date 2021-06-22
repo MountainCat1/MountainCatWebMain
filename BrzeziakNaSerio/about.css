@@ -1,0 +1,16 @@
+
+#about-flex-container {
+
+}
+
+#portrait {
+    border: solid black;
+    align-self: center;
+    margin: 20px auto;
+}
+.text-inline {
+   
+}
+hr {
+    filter: drop-shadow(0px 0px 6px darkcyan);
+}
